@@ -11,36 +11,36 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            // task 1
-            string name=Console.ReadLine();
-            Console.WriteLine("the string is "+name);
+            //// task 1
+            //string name=Console.ReadLine();
+            //Console.WriteLine("the string is "+name);
 
 
 
-            //task 2
-            double x = 22.5;
-            string str="bassam";
-            char c = 'r';
-            bool t= false;
-            int y = 22;
-            const int z= 22;
-            Console.WriteLine(" double x=" + x);
-            Console.WriteLine("string str=" + str);
-            Console.WriteLine(" char c=" + c);
-            Console.WriteLine(" bool t=" + t);
-            Console.WriteLine(" int y =" + y);
-            Console.WriteLine(" const int z =" + z);
+            ////task 2
+            //double x = 22.5;
+            //string str="bassam";
+            //char c = 'r';
+            //bool t= false;
+            //int y = 22;
+            //const int z= 22;
+            //Console.WriteLine(" double x=" + x);
+            //Console.WriteLine("string str=" + str);
+            //Console.WriteLine(" char c=" + c);
+            //Console.WriteLine(" bool t=" + t);
+            //Console.WriteLine(" int y =" + y);
+            //Console.WriteLine(" const int z =" + z);
 
             //task 3
 
-            string[] car = { "lanser", "nissan", "ferrari","hondai" };
-            Console.WriteLine("the first car is " + car[0]+" \n the second car is " + car[1]+"\n the third car is " + car[2]+ "\n the fourth car is " + car[3]);
+            string[] car = { "lanser", "nissan", "ferrari", "hondai" };
+            Console.WriteLine("the first car is " + car[0] + " \n the second car is " + car[1] + "\n the third car is " + car[2] + "\n the fourth car is " + car[3]);
             // task 4
 
-            string first_name=Console.ReadLine();
+            string first_name = Console.ReadLine();
             string last_name = Console.ReadLine();
             string year = Console.ReadLine();
-            Console.WriteLine(first_name +" "+ last_name+" " + year);
+            Console.WriteLine(first_name + " " + last_name + " " + year);
 
             //task 5
 
@@ -50,12 +50,12 @@ namespace ConsoleApp1
             //task 6
 
             int[] arr2 = { 2, 5, 8 };
-            int sum=0;
+            int sum = 0;
             foreach (int i in arr2)
             {
                 sum += i;
             }
-            Console.WriteLine("the sum is "+sum);
+            Console.WriteLine("the sum is " + sum);
         }
     }
 }
