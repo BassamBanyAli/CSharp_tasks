@@ -11,54 +11,30 @@ namespace _26._06._2024
             //task 1
             int x = 4;
             int y = 2;
-            if (x > y)
-                Console.WriteLine("x=" + x + "the larger");
-            else
-                Console.WriteLine("y=" + y + "the larger");
+            int smaller = Math.Min(x, y);
+            Console.WriteLine("The smaller number is: " + smaller);
             //task 2
             int input = int.Parse(Console.ReadLine());
-            if (input < 0)
-                Console.WriteLine("the sign is -");
-            else
-                Console.WriteLine("the sign is +");
+            string[] signs = { "negative","zero" ,"positive"};
+            int signIndex = Math.Sign(input)+1;
+            Console.WriteLine("The sign of the number is: " + signIndex);
+
+
 
             //task 3
             int num1 = 0;
             int num2 = -1;
             int num3 = 4;
             int temp;
-            if (num1 < num2)
-            {
-                temp = num1;
-                num1 = num2;
-                num2 = temp;
-            }
-            else if (num1 < num3)
-            {
-                temp = num1;
-                num1 = num3;
-                num3 = temp;
-
-            }
-            else if (num2 < num3)
-            {
-                temp = num2;
-                num2 = num3;
-                num3 = temp;
-            }
-            Console.WriteLine($"Sorted numbers: {num1}, {num2}, {num3}");
+            int minimum = Math.Min(num1, Math.Min(num2, num3));
+            int maximum = Math.Max(num1, Math.Max(num2, num3));
+            int mid = (num1 + num2 + num3) - minimum - maximum;
+            Console.WriteLine($"Sorted numbers: {maximum}, {mid}, {minimum}");
 
             //task 4
             int[] arr2 = new int[5] { -5, -2, -6, 0, -1 };
-
-            int max;
-            max = arr2[0];
-            foreach (int i in arr2)
-            {
-                if (i > max)
-                    max = i;
-
-            }
+            Array.Sort(arr2);
+            int max = arr2[arr2.Length - 1];
             Console.WriteLine(max);
 
             //task 5
@@ -79,9 +55,9 @@ namespace _26._06._2024
 
             //task 8
 
-            string[] arr_str = new string[5] { "bassam", "bany ali", "24", "computer engineer", "male" };
+            string[] arr_str = new string[5] { "bassam", "bany ali", "2000/11/4", "computer engineer", "dddddddfdf" };
 
-            Console.WriteLine($"{arr_str[0]} with the length is {arr_str[0].Length} \n {arr_str[1]} with the length is {arr_str[1].Length} \n {arr_str[2]} with the length is {arr_str[2].Length} \n {arr_str[3]} with the length is {arr_str[3].Length} \n {arr_str[4]} with the length is {arr_str[4].Length}");
+            Console.WriteLine($"{arr_str[0].Substring(0,6)} with the length is {arr_str[0].Substring(0, 6).Length} \n {arr_str[1].Substring(0, 6)} with the length is {arr_str[1].Substring(0, 6).Length} \n {arr_str[2].Substring(0, 6)} with the length is {arr_str[2].Substring(0, 6).Length} \n {arr_str[3].Substring(0, 6)} with the length is {arr_str[3].Substring(0, 6).Length} \n {arr_str[4].Substring(0, 6)} with the length is {arr_str[4].Substring(0, 6).Length}");
 
         }
     }
