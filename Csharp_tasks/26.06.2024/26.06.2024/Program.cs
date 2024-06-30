@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _26._06._2024
 {
@@ -74,16 +70,16 @@ namespace _26._06._2024
             //task 6
             int hour = int.Parse(Console.ReadLine());
             int min = int.Parse(Console.ReadLine());
-            Console.WriteLine(hour*60+min);
+            Console.WriteLine(hour * 60 + min);
 
             //task 7
             int minutes = int.Parse(Console.ReadLine());
-                Console.WriteLine($"{minutes / 60} hours and {minutes%60} minutes");
+            Console.WriteLine($"{minutes / 60} hours and {minutes % 60} minutes");
 
 
             //task 8
 
-            string[] arr_str = new string[5] { "bassam", "bany ali","24","computer engineer","male"};
+            string[] arr_str = new string[5] { "bassam", "bany ali", "24", "computer engineer", "male" };
 
             Console.WriteLine($"{arr_str[0]} with the length is {arr_str[0].Length} \n {arr_str[1]} with the length is {arr_str[1].Length} \n {arr_str[2]} with the length is {arr_str[2].Length} \n {arr_str[3]} with the length is {arr_str[3].Length} \n {arr_str[4]} with the length is {arr_str[4].Length}");
 
